@@ -6,7 +6,7 @@ module.exports = {
     DB_FILE: path.join(static, 'db.json'),
     separator: " ",
 
-    symbols: ["@", "#", "$", "%", "&", "!"],
+  symbols: ["@", "#", "$", "%", "&", "!"],
     nos: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
 
     symbols_len: 6,
@@ -16,12 +16,12 @@ module.exports = {
 Pass xkcd helps you to create passwords as per the xkcd suggestions.
 You can use below options to favour some advances
 
-Usage: passme -[options] [value]
-    passme -sep -
-    passme -n -s -c
-    passme -save github.com
-    passme -clear github
-    passme -read git
+Usage: pass-xkcd -[options] [value]
+    pass-xkcd -sep -
+    pass-xkcd -n -s -c
+    pass-xkcd -save github.com
+    pass-xkcd -clear github
+    pass-xkcd -read git
 
 Options:
 

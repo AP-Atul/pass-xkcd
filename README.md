@@ -1,11 +1,22 @@
 # pass-xkcd
 A simple password generator inspired from xkcd post
 
+# installation
+1. With npx
+```
+npm i pass-xkcd
+```
+
+2. For cli and global use
+```
+npm i -g pass-xkcd
+```
+
 ## info
 hit the star
 
 ## post
-![xkcd](https://imgs.xkcd.com/comics/password_strength.png)
+[xkcd post](https://imgs.xkcd.com/comics/password_strength.png)
 
 ## usage
 1. Generate a simple password
@@ -20,12 +31,12 @@ pass-xkcd -help
 Pass xkcd helps you to create passwords as per the xkcd suggestions.
 You can use below options to favour some advances
 
-Usage: passme -[options] [value]
-    passme -sep -
-    passme -n -s -c
-    passme -save github.com
-    passme -clear github
-    passme -read git
+Usage: pass-xkcd -[options] [value]
+    pass-xkcd -sep -
+    pass-xkcd -n -s -c
+    pass-xkcd -save github.com
+    pass-xkcd -clear github
+    pass-xkcd -read git
 
 Options:
 
