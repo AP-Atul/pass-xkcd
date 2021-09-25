@@ -5,7 +5,7 @@ A simple password generator inspired from xkcd post
 hit the star
 
 ## post
-[xkcd](https://imgs.xkcd.com/comics/password_strength.png)
+![xkcd](https://imgs.xkcd.com/comics/password_strength.png)
 
 ## usage
 1. Generate a simple password
