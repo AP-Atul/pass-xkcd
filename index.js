@@ -15,6 +15,15 @@ if (p.help(args)) {
     return;
 }
 
+if (p.dump(args)) {
+    const val = store.storage;
+    return Object.keys(val).length > 0 ?
+        Object.keys(val).map((k) => {
+            console.log(`${k}, ${s.decrypt(val[k])}`);
+        })
+        : console.log('empty');
+}
+
 if (p.clear(args)) {
     const val = store.starts(p.clear(args));
     val.map((v) => store.delete(v)); return;

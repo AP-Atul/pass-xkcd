@@ -20,13 +20,17 @@ const help = (args) => {
 }
 
 const read = (args) => {
-    return find(args, '-read') ? args[index(args, '-read') + 1] : undefined
+    return find(args, '-read') ? args[index(args, '-read') + 1] : undefined;
 }
 
 const clear = (args) => {
-    return find(args, '-clear') ? args[index(args, '-clear') + 1] : undefined
+    return find(args, '-clear') ? args[index(args, '-clear') + 1] : undefined;
+}
+
+const dump = (args) => {
+    return find(args, '-dump');
 }
 
 module.exports = {
-    parse, help, read, clear
+    parse, help, read, clear, dump
 };
