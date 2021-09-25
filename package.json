@@ -1,0 +1,24 @@
+{
+  "name": "passme",
+  "version": "1.0.0",
+  "description": "Generate a password with set of words",
+  "main": "index.js",
+  "bin": "./index.js",
+  "keywords": [
+    "passme",
+    "password generator",
+    "passgen",
+    "generator",
+    "passgenerator"
+  ],
+  "author": "Atul Patare",
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AP-Atul/passme"
+  },
+  "bugs": {
+    "url": "https://github.com/AP-Atul/passme/issues"
+  },
+  "homepage": "https://github.com/AP-Atul/passme"
+}
