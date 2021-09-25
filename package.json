@@ -1,11 +1,11 @@
 {
-  "name": "passme",
-  "version": "1.0.0",
+  "name": "pass-xkcd",
+  "version": "1.0.1",
   "description": "Generate a password with set of words",
   "main": "index.js",
   "bin": "./index.js",
   "keywords": [
-    "passme",
+    "pass-xkcd",
     "password generator",
     "passgen",
     "generator",
@@ -15,10 +15,10 @@
   "license": "UNLICENSED",
   "repository": {
     "type": "git",
-    "url": "https://github.com/AP-Atul/passme"
+    "url": "https://github.com/AP-Atul/pass-xkcd"
   },
   "bugs": {
-    "url": "https://github.com/AP-Atul/passme/issues"
+    "url": "https://github.com/AP-Atul/pass-xkcd/issues"
   },
-  "homepage": "https://github.com/AP-Atul/passme"
+  "homepage": "https://github.com/AP-Atul/pass-xkcd"
 }

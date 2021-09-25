@@ -13,12 +13,15 @@ module.exports = {
     nos_len: 10,
 
     HELP: `
-Pass me helps you to create passwords as per the xkcd suggestions.
+Pass xkcd helps you to create passwords as per the xkcd suggestions.
 You can use below options to favour some advances
 
 Usage: passme -[options] [value]
     passme -sep -
     passme -n -s -c
+    passme -save github.com
+    passme -clear github
+    passme -read git
 
 Options:
 
@@ -27,6 +30,7 @@ Options:
   c      capital, includes captial
   save   write to encrypted db
   read   get from db
+  clear  remove passwords with site
   sep    custom separator, (defaul: ' ') requires a separator string
   help   this help
   h      this help
