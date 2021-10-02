@@ -41,6 +41,10 @@ const add = (args) => {
     return { key, val };
 }
 
+const import_ = (args) => {
+    return find(args, '-import') ? args[index(args, '-import') + 1] : undefined;
+}
+
 module.exports = {
-    parse, help, read, clear, dump, add
+    parse, help, read, clear, dump, add, import_
 };

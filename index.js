@@ -8,10 +8,24 @@ const p = require('./src/parser');
 
 const args = process.argv.slice(2);
 const store = new f.store(c.DB_FILE);
-const words = f.readfile(c.WORDS_FILE).split("\n");
+const words = f.readfile(c.WORDS_FILE).split('\n');
 
 if (p.help(args)) {
     console.log(c.HELP);
+    return;
+}
+
+if (p.import_(args)) {
+    const file = p.import_(args);
+    const vals = f.readfile(file).split('\n');
+
+    vals.forEach((val) => {
+        if (val.split(',').length != 2) return;
+        const [site, pass] = val.split(',');
+        store.set(site, s.encrypt(pass.trim()));
+    });
+
+    console.log('file imported');
     return;
 }
 

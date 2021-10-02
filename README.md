@@ -13,7 +13,7 @@ npm i -g pass-xkcd
 ```
 
 ## info
-hit the star
+dump before upgrading to next version
 
 ## post
 [xkcd post](https://imgs.xkcd.com/comics/password_strength.png)
@@ -38,6 +38,7 @@ Usage: pass-xkcd -[options] [value]
     pass-xkcd -clear github
     pass-xkcd -read git
     pass-xkcd -add site new-pass
+    pass-xkcd -import filepathname
 
 Options:
 
@@ -48,6 +49,7 @@ Options:
   add    add your existing passwords to manager
   dump   outputs all saved site, passwords
   read   get from db
+  import file to import 
   clear  remove passwords with site
   sep    custom separator, (defaul: ' ') requires a separator string
   help   this help
