@@ -31,6 +31,16 @@ const dump = (args) => {
     return find(args, '-dump');
 }
 
+const add = (args) => {
+    if (!find(args, '-add'))
+        return undefined;
+
+    const key = args[index(args, '-add') + 1];
+    const val = args[index(args, '-add') + 2];
+
+    return { key, val };
+}
+
 module.exports = {
-    parse, help, read, clear, dump
+    parse, help, read, clear, dump, add
 };

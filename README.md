@@ -37,6 +37,7 @@ Usage: pass-xkcd -[options] [value]
     pass-xkcd -save github.com
     pass-xkcd -clear github
     pass-xkcd -read git
+    pass-xkcd -add site new-pass
 
 Options:
 
@@ -44,6 +45,8 @@ Options:
   s      symbol, include symbols
   c      capital, includes captial
   save   write to encrypted db
+  add    add your existing passwords to manager
+  dump   outputs all saved site, passwords
   read   get from db
   clear  remove passwords with site
   sep    custom separator, (defaul: ' ') requires a separator string

@@ -1,6 +1,6 @@
 {
   "name": "pass-xkcd",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Generate a password with set of words",
   "main": "index.js",
   "bin": "./index.js",
@@ -20,5 +20,12 @@
   "bugs": {
     "url": "https://github.com/AP-Atul/pass-xkcd/issues"
   },
-  "homepage": "https://github.com/AP-Atul/pass-xkcd"
+  "homepage": "https://github.com/AP-Atul/pass-xkcd",
+  "scripts": {
+    "test": "mocha"
+  },
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "mocha": "^9.1.2"
+  }
 }

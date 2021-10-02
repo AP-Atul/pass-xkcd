@@ -15,6 +15,20 @@ if (p.help(args)) {
     return;
 }
 
+if (p.add(args)) {
+    const { key, val } = p.add(args);
+    if (store.has(key)) {
+        console.log('already exists for this site, creating new');
+        const site = crypto.randomBytes(4);
+        store.set(key + '_' + site, s.encrypt(val));
+
+    } else {
+        store.set(key, s.encrypt(val));
+    }
+    console.log(`${key} added to db`);
+    return;
+}
+
 if (p.dump(args)) {
     const val = store.storage;
     return Object.keys(val).length > 0 ?
